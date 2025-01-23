@@ -1,6 +1,9 @@
 #include "Game/Rooms/rooms.h"
 #include "Game/utils.h"
-void q2()
+#include <iostream>
+
+// Helper function for the quiz
+static void q2()
 {
     std::string answer;
     text("prem: ", 150);
@@ -10,8 +13,8 @@ void q2()
     text("d) ", 150);
     text("choose an option:", 150);
     std::cin >> answer;
-    if (answer == "")
-    {
+    if (answer.empty())
+    { // Check for empty input
         text("prem: correct, you can go to the next room", 150);
         cls();
     }
@@ -23,8 +26,9 @@ void q2()
     }
 }
 
-void room2(std::string user)
+void room2(const std::string &user)
 {
+    // Full dialogue for room2
     text("Initializing system...", 100);
     cls();
     text("System ready", 100);
@@ -75,4 +79,5 @@ void room2(std::string user)
     text("You see a shiny object", 80);
     timer(1);
     text("08: Hey, what are you doing", 80);
+    q2(); // Call the quiz
 }

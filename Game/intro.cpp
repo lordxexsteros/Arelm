@@ -1,22 +1,17 @@
-#include "Game/Intro.h"
+#include "Game/intro.h"
 #include "Game/utils.h"
+#include <iostream>
 
-// Function definitions
 void greet_user(const std::string &user)
 {
-    std::cout << "Hello " << user << "!" << std::endl;
-    std::cout << "I am O8, your personal assistant." << std::endl;
-    std::cout << "I will guide you through this journey" << std::endl;
+    // Show greeting messages
+    text("Hello " + user + "!", 80); // Use `text()` for consistency
+    text("I am O8, your personal assistant.", 80);
+    text("I will guide you through this journey", 80);
+    timer(3); // Let the user read the messages
     cls();
-    timer(3);
-    text("hey what are you doi....", 100);
+    text("hey what are you doing....", 100);
     text("System Shut Down....", 100);
-    cls();
-
-    text("Initializing system...", 100);
-    cls();
-    text("System ready", 100);
-    timer(3);
     cls();
 }
 

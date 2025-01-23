@@ -1,6 +1,9 @@
 #include "Game/Rooms/rooms.h"
 #include "Game/utils.h"
-void q1()
+#include <iostream>
+
+// Helper function for the quiz (only visible in this file)
+static void q1()
 {
     std::string answer;
     text("prem: what is the capital of india?", 150);
@@ -22,8 +25,10 @@ void q1()
         q1();
     }
 }
-void room1(std::string user)
+
+void room1(const std::string &user)
 {
+    // Full dialogue for room1
     text("08: Hello!", 80);
     timer(1);
     text("ME: ahhh!!!", 80);
@@ -97,13 +102,13 @@ void room1(std::string user)
     timer(1);
     text("Me: what do you mean?", 80);
     timer(1);
-    text("prem: you have to slove the question to go to the next room", 80);
+    text("prem: you have to solve the question to go to the next room", 80);
     timer(1);
     text("Me: ok, what is the question?", 80);
     timer(1);
     cls();
-    q1();
-    text("You see a white light come form the end", 80);
+    q1(); // Call the quiz
+    text("You see a white light come from the end", 80);
     timer(1);
     text("prem: cya soon", 80);
     timer(1);

@@ -1,11 +1,10 @@
 #ifndef ROOMS_H
 #define ROOMS_H
-#include <iostream>
 
-void q1(){}
-void room1(std::string user){}
-void q2(){}
-void room2(std::string user){}
+#include <string> // Needed for std::string
 
+// Declare only the functions that need to be public
+void room1(const std::string &user);
+void room2(const std::string &user);
 
-#endif
+#endif // ROOMS_H

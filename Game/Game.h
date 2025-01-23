@@ -1,8 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <thread>
-#include <chrono>
-#include <iostream>
+#include "utils.h"
+#include "intro.h"
+#include "Rooms/rooms.h"
 
-#endif
+#endif // GAME_H

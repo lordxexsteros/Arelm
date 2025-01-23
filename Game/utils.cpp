@@ -1,10 +1,22 @@
 #include "Game/utils.h"
+#include <iostream>
 #include <thread>
 #include <chrono>
-#include <iostream>
-auto cls() { std::cout << "\033[2J\033[1;1H"; } // clear the screen
-auto timer(int sec) { std::this_thread::sleep_for(std::chrono::seconds(sec)); }
-auto text = [](const std::string &text, int delay_ms)
+
+// Clear the screen
+void cls()
+{
+    std::cout << "\033[2J\033[1;1H";
+}
+
+// Pause execution
+void timer(int sec)
+{
+    std::this_thread::sleep_for(std::chrono::seconds(sec));
+}
+
+// Print text with delay
+void text(const std::string &text, int delay_ms)
 {
     for (char c : text)
     {
@@ -12,11 +24,13 @@ auto text = [](const std::string &text, int delay_ms)
         std::this_thread::sleep_for(std::chrono::milliseconds(delay_ms));
     }
     std::cout << std::endl;
-};
-auto get_name(std::string user)
+}
+
+// Get user's name
+std::string get_name()
 {
     std::string name;
     std::cout << "May I know your name? ";
-    std::cin >> name;
+    std::getline(std::cin, name); // Handles spaces in names
     return name;
 }

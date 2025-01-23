@@ -1,19 +1,17 @@
-#include "Game/Game.h"
-#include "Game/Rooms/rooms.h"
-#include "Game/utils.h"
-#include "Game/Intro.h"
+#include "Game/Game.h" // Single include for all headers
+#include <iostream>
+#include <string>
+
 using namespace std;
 
 int main()
 {
     cout << "Welcome to Arlem" << endl;
 
-    // variables
-    string user = get_name(user);
+    // Get user's name
+    string user = get_name();
 
-    // get user name
-
-    // greet user
+    // Greet user
     cls();
     greet_user(user);
     timer(3);
@@ -21,11 +19,13 @@ int main()
 
     intro();
     timer(7);
-
     cls();
+
     room1(user);
-
     cls();
+
     room2(user);
+    cls();
+
     return 0;
 }
