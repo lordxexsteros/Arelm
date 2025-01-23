@@ -69,5 +69,29 @@
     "typeinfo": "cpp",
     "valarray": "cpp",
     "variant": "cpp"
-  }
+  },
+
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "Build All Files",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "main.cpp",
+        "Game/utils.cpp",
+        "Game/intro.cpp",
+        "Game/Rooms/room1.cpp",
+        "Game/Rooms/room2.cpp",
+        "-o",
+        "main"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
 }
