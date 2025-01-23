@@ -224,25 +224,34 @@ void room2(std::string user)
     timer(1);
     text("08: Hey, what are you doing", 80);
 }
-int main()
-{
-    std::cout << "Welcome to Arlem" << std::endl; // variables
-    std::string user;                             // Get user name
+int main(){
+    std::cout << "Welcome to Arlem" << std::endl; 
+
+    // variables
+    std::string user;  
+
+    // Get user name
     std::cout << "May I know your name? ";
     std::cin >> user;
     greet_user(user); // greet user
     timer(5);
     cls();
+
+
     text("Initializing system...", 100);
     cls();
     text("System ready", 100);
     timer(3);
     cls();
+
+
     timer(3);
     cls();
     intro();
     timer(7);
+
     room1(user);
+    
     room2(user);
     return 0;
 }
