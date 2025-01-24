@@ -2,8 +2,21 @@
 
 
 
-## Description
-A text-based adventure game set in the magical world of Arlem. Navigate through rooms, solve puzzles, and interact with characters to progress. Built with C++. This is Still under Progres
+## Description  
+**ARLEM** is a terminal-based adventure game (***currently under development***) set in a surreal world of magic and cryptic challenges. You play as an unnamed protagonist trapped in Arlem, guided (or hindered) by 08, an AI with a penchant for sarcasm. To escape, you must:  
+- Solve Prem’s devious quizzes in rooms like *The Corridor of Shadows* and *The Chamber of Echoes*.  
+- Navigate timed dialogues and terminal "system effects" (e.g., simulated shutdowns) for immersion.  
+- Uncover hidden passages and piece together the mystery of Arlem.  
+
+Built in **C++** with a modular design, each room (e.g., `room1.cpp`, `room2.cpp`) is a self-contained challenge, making it easy to expand the game. No external libraries are used—just raw terminal magic.  
+
+**Note**: This project is actively evolving! Planned features include:  
+- More rooms with branching storylines  
+- Save/load functionality  
+- ASCII art for key scenes  
+- Expanded character interactions  
+
+Feedback and contributions are always welcomed!  
 
 ##  Features
 - Multiple interactive rooms with unique challenges
