@@ -120,7 +120,7 @@ void room1(const std::string &user)
 void q2()
 {
     std::string answer;
-    text("prem: hi, you will now enter the main game now ", 150);
+    text("prem: hi, Thanks for playing bye ", 150);
     text("a) Play again? ", 150);
     text("b) Quit", 150);
 
@@ -130,13 +130,11 @@ void q2()
     { // Check for empty input
         text("prem: ok", 150);
         cls();
-
     }
     else
     {
         text("ok", 150);
         cls();
-
     }
 }
 
@@ -211,7 +209,7 @@ void room2(const std::string &user)
     cls();
     text("You see a white light come from the end", 80);
     timer(1);
-    cls();  
+    cls();
     text("ME: hey i see the exit", 80);
     timer(1);
     text("08: good job", 80);
@@ -226,4 +224,4 @@ void room2(const std::string &user)
     q2();
 }
 
-         // Call the quiz
+// Call the quiz
