@@ -1,4 +1,4 @@
-#include "Game/Game.h"
+#include "Game.h"
 
 // Single include for all headers
 

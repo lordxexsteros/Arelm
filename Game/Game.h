@@ -1,10 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
-#include "Utils.h"
-#include "rooms.h"
-
-// Introduction
-void greet_user(const std::string &user);
-void intro();
+#include "Sets/Utils.h"
+#include "Rooms/rooms.h"
+#include "Intro/intro.h"
 
 #endif // GAME_H
