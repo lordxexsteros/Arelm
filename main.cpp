@@ -1,5 +1,6 @@
-#include "Game/Game.h" // Single include for all headers
+#include "Game/Game.h"
 
+// Single include for all headers
 
 using namespace std;
 

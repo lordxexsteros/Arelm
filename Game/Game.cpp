@@ -1,6 +1,5 @@
-#include "Game/intro.h"
-#include "Game/utils.h"
-#include <iostream>
+#include "Game.h"
+#include "rooms.h"
 
 void greet_user(const std::string &user)
 {
