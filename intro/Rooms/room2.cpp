@@ -1,26 +1,6 @@
 #include "rooms.h"
 
-// Helper function for the quiz
-void q2()
-{
-    std::string answer;
-    text("prem: hi, Thanks for playing bye ", 150);
-    text("a) Play again? ", 150);
-    text("b) Quit", 150);
 
-    text("choose an option:", 150);
-    std::cin >> answer;
-    if (answer == "a")
-    { // Check for empty input
-        text("prem: ok", 150);
-        cls();
-    }
-    else
-    {
-        text("ok", 150);
-        cls();
-    }
-}
 
 void room2(const std::string &user)
 {
@@ -101,11 +81,20 @@ void room2(const std::string &user)
     text("ME:Lets goo!!", 80);
     timer(1);
     cls();
-    text("system shutting down...", 100);
     cls();
-    timer(5);
+    text("prem: So we meet again ", 80);
+    timer(1);
+    text("ME: Oh so ask me the question", 80);
+    timer(1);
+    text("prem: Nope, you have passed the test", 80);
+    timer(1);
+    text("ME: what?", 80);
+    timer(1);
+    text("prem: you shall now proced into the main world", 80);
+    timer(1);
+    text("system shutting down...", 100);
 
-    q2();
+
 }
 
 // Call the quiz

@@ -2,6 +2,5 @@
 #define GAME_H
 #include "Sets/Utils.h"
 #include "Rooms/rooms.h"
-#include "Intro/intro.h"
-
+using namespace std;
 #endif // GAME_H

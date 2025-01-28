@@ -7,7 +7,7 @@
 
 // Questions
 void q1(); // Declaration only
-void q2();
+
 
 // Rooms
 void room1(const std::string &user);
